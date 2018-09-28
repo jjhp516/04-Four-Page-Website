@@ -1,0 +1,38 @@
+header {
+    background: $primary-color;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            background: $debug;
+            height: 80px;
+            width: 80px;
+        }
+    
+        ul {
+            display: flex;
+            margin-right: 100px;
+
+            li {
+                list-style: none;
+                margin: 0 20px;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
