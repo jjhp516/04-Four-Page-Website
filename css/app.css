@@ -35,6 +35,24 @@ header {
 
 footer {
   background: lightblue; }
+  footer p {
+    margin: 0; }
+  footer .footer-group {
+    background: orange;
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .footer-group .brand-img {
+      background: orangered;
+      width: 200px;
+      height: 200px; }
+    footer .footer-group .footer-text {
+      background: orangered;
+      width: 200px;
+      height: 200px; }
 
 .hero, .small-hero {
   background: orangered;

@@ -1,3 +1,31 @@
 footer {
     background: $primary-color;
+
+    p {
+        margin: 0;
+    }
+
+    .footer-group {
+        background: $debug;
+        width: 500px;
+        margin: 0 auto;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .brand-img {
+            background: $debug2;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .footer-text {
+            background: $debug2;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+    }
 }
