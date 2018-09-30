@@ -1,23 +1,54 @@
 footer {
     background: $primary-color;
+    padding: 20px 0;
 
-    p {
+    h3 {
+        margin: 10px 0;
+    }
+
+    h4, p, i {
         margin: 0;
     }
 
-    .footer-group {
-        background: $debug;
-        padding: 20px 0;
+    .footer-content {
+        min-width: 250px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
 
         .brand-img {
-            background: $debug2;
+            background-color: $debug;
             margin: 10px;
-            width: 200px;
-            flex: 1 1 200px;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+        }
+
+        .footer-group {
+            margin: 10px 30px 0;
+
+            .footer-text {
+                margin-bottom: 30px;
+            }
+    
+            .social-media {
+                width: 150px;
+                margin-left: 4px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
+
+    .copyright {
+        font-size: 12px;
+        padding-top: 12px;
+    }
 }
+
+
+
+
+
