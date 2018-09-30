@@ -6,6 +6,11 @@
   max-width: 1100px;
   margin: 0 auto; }
 
+h1 {
+  color: white;
+  font-size: 48px;
+  margin: 0; }
+
 main {
   min-height: 300px; }
 
@@ -17,20 +22,31 @@ a {
   color: black; }
 
 .hero, .small-hero {
-  background: orangered;
   width: 100%;
-  height: 500px;
+  background: url(../img/danguin.jpg);
+  background-size: cover;
+  background-position: 60% 20%;
+  margin-top: 80px;
   display: flex;
   align-items: flex-end; }
   .hero .hero-content, .small-hero .hero-content {
-    background: orange;
-    width: 100%;
-    position: relative;
-    bottom: 10%;
-    text-align: center; }
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) 90%, transparent);
+    width: 40%;
+    min-width: 540px;
+    margin: 300px 0 5%; }
+    .hero .hero-content .text-wrap, .small-hero .hero-content .text-wrap {
+      min-width: 210px;
+      margin-right: 30px;
+      padding: 10px 10px 10px 0;
+      text-align: right; }
+      .hero .hero-content .text-wrap p, .small-hero .hero-content .text-wrap p {
+        margin: 0;
+        padding-top: 5px;
+        color: white;
+        text-transform: uppercase; }
 
-.small-hero {
-  height: 300px; }
+.small-hero .hero-content {
+  margin: 150px 0 0; }
 
 header {
   background: lightblue;
@@ -90,8 +106,11 @@ footer {
     font-size: 12px;
     padding-top: 12px; }
 
-@media (max-width: 600px) {
+@media (max-width: 540px) {
   .footer-content {
     flex-direction: column; }
-  .footer-text {
-    text-align: center; } }
+    .footer-content .footer-text {
+      text-align: center; }
+  .hero .hero-content, .small-hero .hero-content {
+    width: 540px;
+    min-width: 0; } }

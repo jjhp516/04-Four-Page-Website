@@ -1,0 +1,6 @@
+@mixin hero-image($image-path) {
+    width: 100%;
+    background: $image-path;
+    background-size: cover;
+    background-position: 60% 20%;
+}

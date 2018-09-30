@@ -1,10 +1,16 @@
-@media (max-width: 600px) {
+@media (max-width: 540px) {
     .footer-content {
-        flex-direction: column;
-    }
+        flex-direction: column;      
      
-    .footer-text {
-        text-align: center;
+        .footer-text {
+            text-align: center;
+        }
     }
-    
+
+    .hero {
+        .hero-content {
+            width: 540px;
+            min-width: 0;
+        }
+    }
 }
