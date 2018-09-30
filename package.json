@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "node_modules/.bin/gulp watch"
   },
   "repository": {
@@ -22,4 +21,3 @@
     "gulp-sass": "^4.0.1"
   }
 }
-
