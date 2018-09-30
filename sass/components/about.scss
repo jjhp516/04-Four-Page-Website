@@ -1,0 +1,38 @@
+.bio-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    .profile-pic {
+        background: white;
+        box-shadow: 6px 6px 20px 0px $shadow;
+        padding: 15px 15px 60px;
+
+        img {
+            width: 250px;
+        }
+    }
+    
+    .bio {
+        max-width: 400px;
+        min-width: 200px;
+        padding: 20px 0;
+        margin-left: 40px;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 4px;
+            padding-left: 4px;
+            color: $shadow;
+            border-left: 1.5px solid $shadow;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+

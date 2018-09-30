@@ -1,16 +1,19 @@
 @media (max-width: 540px) {
-    .footer-content {
-        flex-direction: column;      
-     
-        .footer-text {
-            text-align: center;
-        }
-    }
 
     .hero {
         .hero-content {
             width: 540px;
             min-width: 0;
+        }
+    }
+
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+
+        .bio {
+            width: 250px;
+            margin: 20px 0 0;
         }
     }
 }

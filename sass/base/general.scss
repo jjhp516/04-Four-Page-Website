@@ -8,14 +8,27 @@
     margin: 0 auto;
 }
 
-h1 {
-    color: $light-text;
-    font-size: 48px;
+main {
+    background: $pale-shade;
+    padding: 60px 0 80px;
+    min-height: 300px;
+}
+
+h1, h4, p, i {
     margin: 0;
 }
 
-main {
-    min-height: 300px;
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    color: $light-text;
+    font-size: 48px;
+}
+
+h2, h3 {
+    margin: 0 0 10px;
 }
 
 li {

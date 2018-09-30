@@ -1,0 +1,8 @@
+@media (max-width: 540px) {
+  .footer-content {
+    flex-direction: column; }
+    .footer-content .footer-text {
+      text-align: center; }
+  .hero .hero-content {
+    width: 540px;
+    min-width: 0; } }
