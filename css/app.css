@@ -24,10 +24,13 @@ h1 {
 h2, h3 {
   margin: 0 0 10px; }
 
+h2 {
+  font-size: 30px; }
+
 li {
   list-style: none; }
 
-a {
+a, .contact .contact-section .link-container .email-link {
   text-decoration: none;
   color: black; }
 
@@ -52,7 +55,7 @@ header {
       margin-right: 100px; }
       header .nav-container ul li {
         margin: 0 20px; }
-        header .nav-container ul li a {
+        header .nav-container ul li a, header .nav-container ul li .contact .contact-section .link-container .email-link, .contact .contact-section .link-container header .nav-container ul li .email-link {
           text-transform: uppercase;
           padding: 10px; }
 
@@ -98,8 +101,6 @@ header {
     min-width: 200px;
     padding: 20px 0;
     margin-left: 40px; }
-    .bio-container .bio h2 {
-      font-size: 30px; }
     .bio-container .bio span {
       display: inline-block;
       margin-left: 4px;
@@ -108,6 +109,38 @@ header {
       border-left: 1.5px solid #9e9e9e;
       font-size: 16px;
       text-transform: uppercase; }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 250px; }
+  .contact .contact-section {
+    width: 33%;
+    min-width: 250px;
+    padding: 10px;
+    margin: 0 40px 40px; }
+    .contact .contact-section .link-container {
+      display: flex;
+      margin-top: 10px; }
+      .contact .contact-section .link-container a, .contact .contact-section .link-container .email-link {
+        width: 90px;
+        margin: 0 10px 10px 0;
+        border: 4px solid steelblue;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: bold;
+        color: steelblue; }
+      .contact .contact-section .link-container p {
+        color: #9e9e9e; }
+        .contact .contact-section .link-container p span {
+          border-top: 1px solid #9e9e9e;
+          font-weight: bold; }
+      .contact .contact-section .link-container .email-link {
+        width: 130px;
+        margin-right: 20px;
+        font-size: 20px;
+        text-transform: uppercase; }
 
 footer {
   background: lightblue;
@@ -137,6 +170,10 @@ footer {
   footer .copyright {
     font-size: 12px;
     padding-top: 12px; }
+
+@media (max-width: 1024px) {
+  .link-container {
+    flex-direction: column; } }
 
 @media (max-width: 540px) {
   .hero .hero-content, .small-hero .hero-content {

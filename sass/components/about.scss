@@ -4,8 +4,7 @@
     justify-content: center;
 
     .profile-pic {
-        background: white;
-        box-shadow: 6px 6px 20px 0px $shadow;
+        @include card-effect($negative-space, $shadow);
         padding: 15px 15px 60px;
 
         img {
@@ -18,10 +17,6 @@
         min-width: 200px;
         padding: 20px 0;
         margin-left: 40px;
-
-        h2 {
-            font-size: 30px;
-        }
 
         span {
             display: inline-block;

@@ -4,3 +4,8 @@
     background-size: cover;
     background-position: 60% 20%;
 }
+
+@mixin card-effect($color, $shadow-color) {
+    background: $color;
+    box-shadow: 6px 6px 20px 0px $shadow-color;
+}
