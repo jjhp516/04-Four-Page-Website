@@ -9,3 +9,10 @@
     background: $color;
     box-shadow: 6px 6px 20px 0px $shadow-color;
 }
+
+@mixin project-image($image-path) {
+    width: 200px;
+    height: 170px;
+    border-radius: 10% / 50%;
+    background: $image-path;
+}

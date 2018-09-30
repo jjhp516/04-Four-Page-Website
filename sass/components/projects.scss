@@ -1,0 +1,48 @@
+.project-container {
+    max-width: 1000px;
+    min-width: 250px;
+    padding: 40px 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid $shadow;
+    transform: scale(0.99);
+    transition: 0.2s ease-out;
+    
+    &:hover {
+        @include card-effect($negative-space, $shadow);
+        border: none;
+        transform: scale(1);
+    }
+
+    .project-content {
+        display: flex;
+        align-items: center;
+
+        .project-text {
+            max-width: 500px;   
+        }
+    }
+
+    .project-footer {
+        background: $debug2;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        ul {
+            padding: 0;
+            flex: 1 1 700px;
+            display: flex;
+
+            li {
+                margin: 0 20px;
+            }
+        }
+
+        a {
+            flex: 0 0 100px;
+            background: $debug;
+            margin-right: 20px;
+        }
+    }
+}

@@ -110,6 +110,107 @@ header {
       font-size: 16px;
       text-transform: uppercase; }
 
+.project-container {
+  max-width: 1000px;
+  min-width: 250px;
+  padding: 40px 60px;
+  margin: 0 auto;
+  border-bottom: 1px solid #9e9e9e;
+  transform: scale(0.99);
+  transition: 0.2s ease-out; }
+  .project-container:hover {
+    background: white;
+    box-shadow: 6px 6px 20px 0px #9e9e9e;
+    border: none;
+    transform: scale(1); }
+  .project-container .project-content {
+    display: flex;
+    align-items: center; }
+    .project-container .project-content .project-text {
+      max-width: 500px; }
+  .project-container .project-footer {
+    background: orangered;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; }
+    .project-container .project-footer ul {
+      padding: 0;
+      flex: 1 1 700px;
+      display: flex; }
+      .project-container .project-footer ul li {
+        margin: 0 20px; }
+    .project-container .project-footer a, .project-container .project-footer .contact .contact-section .link-container .email-link, .contact .contact-section .link-container .project-container .project-footer .email-link {
+      flex: 0 0 100px;
+      background: orange;
+      margin-right: 20px; }
+
+.trendy-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.coffee-time-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.danpool-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.uwclosest-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.simple-vr-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.recmob-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.deafband-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.savescription-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.walkingbuddy-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.foody-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
+.parkthevalley-logo {
+  width: 200px;
+  height: 170px;
+  border-radius: 10% / 50%;
+  background: orange; }
+
 .contact {
   display: flex;
   justify-content: center;
