@@ -1,43 +1,43 @@
 .trendy-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/trendy.png));
 }
 
 .coffee-time-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/coffee-time.png));
 }
 
 .danpool-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/danpool.png));
 }
 
 .uwclosest-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/uwclosest.png));
 }
 
 .simple-vr-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/simple-vr.png));
 }
 
 .recmob-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/recmob.jpg));
 }
 
 .deafband-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/deafband.png));
 }
 
 .savescription-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/savescription.png));
 }
 
 .walkingbuddy-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/walkingbuddy.png));
 }
 
 .foody-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/foody.png));
 }
 
 .parkthevalley-logo {
-    @include project-image($debug);
+    @include project-image(url(../img/parkthevalley.png));
 }

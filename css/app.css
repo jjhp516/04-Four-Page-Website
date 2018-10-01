@@ -151,9 +151,11 @@ header {
     .preview-container .project-preview .preview-img {
       width: 250px;
       height: 200px;
-      border-radius: 10% / 50%;
       background: orange;
       margin: 0 60px 20px 0;
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
       border-radius: 5px;
       margin: 10px; }
   .preview-container h2 {
@@ -274,79 +276,101 @@ header {
 .trendy-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/trendy.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .coffee-time-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/coffee-time.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .danpool-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/danpool.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .uwclosest-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/uwclosest.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .simple-vr-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/simple-vr.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .recmob-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/recmob.jpg);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .deafband-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/deafband.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .savescription-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/savescription.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .walkingbuddy-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/walkingbuddy.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .foody-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/foody.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .parkthevalley-logo {
   width: 250px;
   height: 200px;
-  border-radius: 10% / 50%;
-  background: orange;
-  margin: 0 60px 20px 0; }
+  background: url(../img/parkthevalley.png);
+  margin: 0 60px 20px 0;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 .contact {
   display: flex;
