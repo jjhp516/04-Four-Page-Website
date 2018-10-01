@@ -16,10 +16,20 @@
     <!-- =============================
                 HEADER 
     ================================= -->
+    <div class='mobile-menu closed' id='mobile-menu'>
+        <button id='close-button'>Close</button>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
     <header>
         <div class="wrapper">
             <div class="nav-container">
-                <a href="./index.html"><div class="logo"></div></a>
+                <a href="./index.html"><div class="logo"><i class="fas fa-glasses fa-4x"></i></div></a>
                 
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -27,6 +37,10 @@
                     <li><a href="./projects.html">Projects</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
+
+                <button class='open-button' id='open-button'>
+                    <i class="fas fa-bars" ></i>
+                </button>
             </div>
         </div>
     </header>
@@ -91,6 +105,8 @@
             </div>   
         </div>
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 </html>
 
