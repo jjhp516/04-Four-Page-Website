@@ -70,10 +70,34 @@
                 <p>I am based in Montreal, QC</p>
                 <p>Ask me anything or just say hello.</p>
 
-                <div class="link-container">
+                <!-- <div class="link-container">
                     <a class="email-link" href="href="mailto:dougouk@gmail.com" target="_blank">Email</a>
                     <p>Send me a message:<br><span>dougouk@gmail.com</span></p>
-                </div>
+                </div> -->
+
+                <form action="https://form.fakeurl-dandkim.com/submit" method="POST">
+                    <label for="name">
+                        Name:<br>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your name"/>
+                    </label>
+
+                    <label for="email">
+                        E-mail:
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"/>        
+                    </label>
+                    
+                    <label for="message">Message:<br><textarea name="message" id="message" placeholder="Type your message here"></textarea></label>
+                
+                    <input type="submit"/>
+                </form>
             </div>
 
             <div class="contact-section">

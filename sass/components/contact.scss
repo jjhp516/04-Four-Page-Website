@@ -41,6 +41,24 @@
                 text-transform: uppercase;
             }
         }
+
+        form {
+            input {
+                margin-bottom: 16px;
+                width: 200px;
+            }
+
+            width: 250px;
+            border: 4px solid $secondary-color;
+            padding: 20px;
+            margin-top: 10px;
+
+            textarea {
+                width: 200px;
+                height: 70px;
+                resize: none;
+            }
+        }
     }    
 }
 

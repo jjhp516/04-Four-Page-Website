@@ -379,6 +379,18 @@ header {
         margin-right: 20px;
         font-size: 20px;
         text-transform: uppercase; }
+    .contact .contact-section form {
+      width: 250px;
+      border: 4px solid steelblue;
+      padding: 20px;
+      margin-top: 10px; }
+      .contact .contact-section form input {
+        margin-bottom: 16px;
+        width: 200px; }
+      .contact .contact-section form textarea {
+        width: 200px;
+        height: 70px;
+        resize: none; }
 
 footer {
   background: lightblue;
