@@ -157,7 +157,20 @@ header {
       background-position: 50% 50%;
       background-repeat: no-repeat;
       border-radius: 5px;
-      margin: 10px; }
+      margin: 10px;
+      position: relative;
+      overflow: hidden; }
+    .preview-container .project-preview p {
+      margin: 10px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: 0.3s ease-in-out;
+      transform: translate(250px, 0);
+      opacity: 0; }
+    .preview-container .project-preview .preview-img:hover p {
+      transform: translate(0, 0);
+      opacity: 1; }
   .preview-container h2 {
     text-align: center; }
   .preview-container a, .preview-container .mobile-menu button, .mobile-menu .preview-container button, .preview-container .contact .contact-section .link-container .email-link, .contact .contact-section .link-container .preview-container .email-link {
