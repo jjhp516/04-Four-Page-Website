@@ -20,7 +20,26 @@
             @include project-image($debug);
             border-radius: 5px;
             margin: 10px;
+            position: relative;
+            overflow: hidden;
         }
+
+        p {
+            margin: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            transition: 0.3s ease-in-out;
+            transform: translate(250px, 0);
+            opacity: 0;
+        }
+
+        .preview-img:hover p {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
+
     }
 
     h2 {
