@@ -1,6 +1,43 @@
 .preview-container {
     @include card-effect($negative-space,$shadow);
     padding: 30px;
-    min-width: 260px;
+    min-width: 250px;
+
+    .feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .project-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .preview-img {
+            @include project-image($debug);
+            border-radius: 5px;
+            margin: 10px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    a { 
+        display: block;
+        width: 200px;
+        margin: 40px auto;
+        border: 4px solid $secondary-color;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
 }
 
