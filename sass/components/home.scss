@@ -1,0 +1,6 @@
+.preview-container {
+    @include card-effect($negative-space,$shadow);
+    padding: 30px;
+    min-width: 260px;
+}
+
