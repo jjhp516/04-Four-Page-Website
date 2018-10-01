@@ -27,6 +27,9 @@ h2, h3 {
 h2 {
   font-size: 30px; }
 
+ul {
+  padding: 0; }
+
 li {
   list-style: none; }
 
@@ -101,7 +104,7 @@ header {
     min-width: 200px;
     padding: 20px 0;
     margin-left: 40px; }
-    .bio-container .bio span {
+    .bio-container .bio span, .bio-container .bio .project-container .project-content .project-text em .award, .project-container .project-content .project-text em .bio-container .bio .award {
       display: inline-block;
       margin-left: 4px;
       padding-left: 4px;
@@ -113,7 +116,7 @@ header {
 .project-container {
   max-width: 1000px;
   min-width: 250px;
-  padding: 40px 60px;
+  padding: 40px 40px 10px;
   margin: 0 auto;
   border-bottom: 1px solid #9e9e9e;
   transform: scale(0.99);
@@ -127,89 +130,142 @@ header {
     display: flex;
     align-items: center; }
     .project-container .project-content .project-text {
-      max-width: 500px; }
-  .project-container .project-footer {
-    background: orangered;
+      width: 50%;
+      max-width: 400px;
+      min-width: 250px; }
+      .project-container .project-content .project-text h3 {
+        margin: 20px 0 8px; }
+      .project-container .project-content .project-text em {
+        font-size: 14px;
+        font-style: normal;
+        color: #9e9e9e; }
+        .project-container .project-content .project-text em span, .project-container .project-content .project-text em .award {
+          font-size: 12px;
+          padding: 1px 4px;
+          margin: 1px 2px;
+          background: orange;
+          color: white; }
+        .project-container .project-content .project-text em .award {
+          background: orangered; }
+      .project-container .project-content .project-text .button-devpost {
+        display: inline-block;
+        background: url(../img/devpost.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 150px;
+        height: 30px;
+        margin: 20px 20px 20px 0; }
+      .project-container .project-content .project-text .button-googleplay {
+        display: inline-block;
+        background: url(../img/google-play.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 150px;
+        height: 40px;
+        margin: 20px 20px 20px 0; }
+      .project-container .project-content .project-text .button-wrap {
+        display: flex; }
+      .project-container .project-content .project-text .button-web {
+        border-radius: 50%;
+        border: 2px solid black;
+        background: white;
+        width: 40px;
+        height: 40px;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .project-container .project-content .project-text .button-web i {
+          color: black; }
+  .project-container .project-footer ul {
     width: 100%;
-    margin-top: 20px;
     display: flex;
-    align-items: center; }
-    .project-container .project-footer ul {
-      padding: 0;
-      flex: 1 1 700px;
-      display: flex; }
-      .project-container .project-footer ul li {
-        margin: 0 20px; }
-    .project-container .project-footer a, .project-container .project-footer .contact .contact-section .link-container .email-link, .contact .contact-section .link-container .project-container .project-footer .email-link {
-      flex: 0 0 100px;
-      background: orange;
-      margin-right: 20px; }
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .project-container .project-footer ul li {
+      margin: 2px;
+      padding: 5px 10px;
+      border-radius: 12px;
+      background: #9e9e9e;
+      color: white;
+      font-size: 12px; }
 
 .trendy-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .coffee-time-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .danpool-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .uwclosest-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .simple-vr-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .recmob-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .deafband-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .savescription-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .walkingbuddy-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .foody-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .parkthevalley-logo {
-  width: 200px;
-  height: 170px;
+  width: 250px;
+  height: 200px;
   border-radius: 10% / 50%;
-  background: orange; }
+  background: orange;
+  margin: 0 60px 20px 0; }
 
 .contact {
   display: flex;
@@ -234,7 +290,7 @@ header {
         color: steelblue; }
       .contact .contact-section .link-container p {
         color: #9e9e9e; }
-        .contact .contact-section .link-container p span {
+        .contact .contact-section .link-container p span, .contact .contact-section .link-container p .project-container .project-content .project-text em .award, .project-container .project-content .project-text em .contact .contact-section .link-container p .award {
           border-top: 1px solid #9e9e9e;
           font-weight: bold; }
       .contact .contact-section .link-container .email-link {
@@ -274,7 +330,16 @@ footer {
 
 @media (max-width: 1024px) {
   .link-container {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .project-container {
+    padding: 40px 20px 10px 10px; }
+    .project-container .project-content {
+      flex-direction: column; }
+      .project-container .project-content .project-img {
+        margin-right: 0;
+        width: 45%;
+        min-width: 250px;
+        padding-bottom: 35%; } }
 
 @media (max-width: 540px) {
   .hero .hero-content, .small-hero .hero-content {
