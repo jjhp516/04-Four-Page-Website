@@ -1,7 +1,7 @@
 .project-container {
     max-width: 1000px;
     min-width: 250px;
-    padding: 40px 60px;
+    padding: 40px 40px 10px;
     margin: 0 auto;
     border-bottom: 1px solid $shadow;
     transform: scale(0.99);
@@ -18,31 +18,93 @@
         align-items: center;
 
         .project-text {
-            max-width: 500px;   
+            width: 50%;
+            max-width: 400px;
+            min-width: 250px;
+
+            h3 {
+                margin: 20px 0 8px;
+            }
+
+            em {
+                font-size: 14px;
+                font-style: normal;
+                color: $shadow;
+
+                span {
+                    font-size: 12px;
+                    padding: 1px 4px;
+                    margin: 1px 2px;
+                    background: $debug;
+                    color: $light-text; 
+                }
+
+                .award {
+                    @extend span;
+                    background: $debug2;
+                }
+            }
+
+            .button-devpost {
+                display: inline-block;
+                background: url(../img/devpost.png);
+                background-size: cover;
+                background-position: 50% 50%;
+                width: 150px;
+                height: 30px;
+                margin: 20px 20px 20px 0;
+            }
+    
+            .button-googleplay {
+                display: inline-block;
+                background: url(../img/google-play.png);
+                background-size: cover;
+                background-position: 50% 50%;
+                width: 150px;
+                height: 40px;
+                margin: 20px 20px 20px 0;
+            }
+            
+            .button-wrap {
+                display: flex;
+            }
+            
+            .button-web {
+                border-radius: 50%;
+                border: 2px solid $dark-text;
+                background: $negative-space;
+                width: 40px;
+                height: 40px;
+                margin: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                i {
+                    color: $dark-text;
+                }
+            }
         }
     }
 
     .project-footer {
-        background: $debug2;
-        width: 100%;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-
         ul {
-            padding: 0;
-            flex: 1 1 700px;
+            width: 100%;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
 
             li {
-                margin: 0 20px;
+                margin: 2px;
+                padding: 5px 10px;
+                border-radius: 12px;
+                background: $shadow;
+                color: $light-text;
+                font-size: 12px;
             }
-        }
-
-        a {
-            flex: 0 0 100px;
-            background: $debug;
-            margin-right: 20px;
         }
     }
 }
+
+
+
