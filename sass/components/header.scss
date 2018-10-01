@@ -13,9 +13,17 @@ header {
         justify-content: space-between;
 
         .logo {
-            background: $debug;
-            height: 80px;
-            width: 80px;
+            // temp
+            background: $secondary-color;
+            height: 70px;
+            width: 82px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 1em;
+
+            i {
+                color: $light-text;
+            }
         }
     
         ul {
@@ -31,6 +39,57 @@ header {
                 }
             }
         }
+
+        .open-button {
+            display: none;
+            background: transparent;
+            border: none;
+            text-transform: uppercase;
+            padding: 10px;
+            margin: 0 50px;
+            color: $dark-text;
+
+            &:hover {
+                cursor: pointer;
+                background: $debug;
+            }
+        }
     }
 }
 
+.mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 180px;
+    background: $shadow;
+    transition: 0.3s;
+    padding: 30px 20px;
+    
+    a {
+        color: $dark-text;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px;
+        font-size: 0.8em;
+
+        &:hover {
+            cursor: pointer;
+            background: $debug;
+        }
+    }
+
+    button {
+        @extend a;
+        border: none;
+        background: $pale-shade;
+        font-weight: bold;
+    }        
+}
+
+.closed {
+    transform: translate(180px, 0);
+}

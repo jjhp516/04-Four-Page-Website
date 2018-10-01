@@ -33,7 +33,7 @@ ul {
 li {
   list-style: none; }
 
-a, .contact .contact-section .link-container .email-link {
+a, .mobile-menu button, .contact .contact-section .link-container .email-link {
   text-decoration: none;
   color: black; }
 
@@ -50,17 +50,61 @@ header {
     align-items: center;
     justify-content: space-between; }
     header .nav-container .logo {
-      background: orange;
-      height: 80px;
-      width: 80px; }
+      background: steelblue;
+      height: 70px;
+      width: 82px;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 1em; }
+      header .nav-container .logo i {
+        color: white; }
     header .nav-container ul {
       display: flex;
       margin-right: 100px; }
       header .nav-container ul li {
         margin: 0 20px; }
-        header .nav-container ul li a, header .nav-container ul li .contact .contact-section .link-container .email-link, .contact .contact-section .link-container header .nav-container ul li .email-link {
+        header .nav-container ul li a, header .nav-container ul li .mobile-menu button, .mobile-menu header .nav-container ul li button, header .nav-container ul li .contact .contact-section .link-container .email-link, .contact .contact-section .link-container header .nav-container ul li .email-link {
           text-transform: uppercase;
           padding: 10px; }
+    header .nav-container .open-button {
+      display: none;
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 0 50px;
+      color: black; }
+      header .nav-container .open-button:hover {
+        cursor: pointer;
+        background: orange; }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 180px;
+  background: #9e9e9e;
+  transition: 0.3s;
+  padding: 30px 20px; }
+  .mobile-menu a, .mobile-menu button, .mobile-menu .contact .contact-section .link-container .email-link, .contact .contact-section .link-container .mobile-menu .email-link {
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    font-size: 0.8em; }
+    .mobile-menu a:hover, .mobile-menu button:hover, .mobile-menu .contact .contact-section .link-container .email-link:hover, .contact .contact-section .link-container .mobile-menu .email-link:hover {
+      cursor: pointer;
+      background: orange; }
+  .mobile-menu button {
+    border: none;
+    background: #f7f7f8;
+    font-weight: bold; }
+
+.closed {
+  transform: translate(180px, 0); }
 
 .hero, .small-hero {
   width: 100%;
@@ -280,7 +324,7 @@ header {
     .contact .contact-section .link-container {
       display: flex;
       margin-top: 10px; }
-      .contact .contact-section .link-container a, .contact .contact-section .link-container .email-link {
+      .contact .contact-section .link-container a, .contact .contact-section .link-container .mobile-menu button, .mobile-menu .contact .contact-section .link-container button, .contact .contact-section .link-container .email-link {
         width: 90px;
         margin: 0 10px 10px 0;
         border: 4px solid steelblue;
@@ -312,7 +356,8 @@ footer {
       background-color: orange;
       margin: 10px;
       width: 165px;
-      height: 165px; }
+      height: 165px;
+      border-radius: 50%; }
     footer .footer-content .footer-group {
       margin: 10px 30px; }
       footer .footer-content .footer-group .footer-text {
@@ -339,7 +384,13 @@ footer {
         margin-right: 0;
         width: 45%;
         min-width: 250px;
-        padding-bottom: 35%; } }
+        padding-bottom: 35%; }
+  header .nav-container ul {
+    display: none; }
+  header .nav-container .open-button {
+    display: block; }
+  .mobile-menu {
+    display: block; } }
 
 @media (max-width: 540px) {
   .hero .hero-content, .small-hero .hero-content {

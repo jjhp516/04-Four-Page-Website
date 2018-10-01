@@ -17,6 +17,21 @@
             }
         }
     }
+    
+
+    header .nav-container {
+        ul {
+            display: none;
+        }
+
+        .open-button {
+            display:block;
+        }    
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }
 
 
